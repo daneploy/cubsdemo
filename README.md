@@ -5,7 +5,7 @@ Dane Johnson's Cubs Developer Demo App
 
 TESTING NOTES:
 Please Test Using Firefox.
-To Launch, install Cubs Demo folder locally and just drag the index.html file into firefox.
+To Launch, install files to a folder locally or unzip the 'Cubs Demo' folder from .zip and just drag the index.html file into firefox.
 Chrome currently blocks locally run getJSON requests without initiallizing a server.
 
 DESGIN:
