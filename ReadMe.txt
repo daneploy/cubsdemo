@@ -8,6 +8,13 @@ Please Test Using Firefox.
 To Launch, install files to a folder locally or unzip the 'Cubs Demo' folder from .zip and just drag the index.html file into firefox.
 Chrome currently blocks locally run getJSON requests without initiallizing a server.
 
+LIBRARY USE:
+The only library included in this project was jQuery.  This was used to provide shorter/cleaner code that is easier to build and read, 
+particularly when using ajax/getJSON to access and parse the roster.json file. 
+It also allows shortcuts for functions like hiding and displaying data, basic search/short functionality and a few design elements.
+Since no other libraries were requested or required, possible conflicts between jQuery and other existing libraries were
+not a concern for this project.
+
 DESGIN:
 I made some efforts to make the design responsive and intuitive.  This should work seamlessly on phone, tablet or desktop.
 
