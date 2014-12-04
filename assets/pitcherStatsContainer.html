@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('div.pitchingStatContainer *').each(function(){
+    myClass();
+});
+		});
+			function myClass() { 
+				
+				var classList = $(this).className;
+				for (var i = 0; i < classList.length; i++) {
+				if (classList[i] === 'inningsPitched') {
+				$("div.inningsPitched").text("Innings Pitched");
+				}
+			}
+			};
+
+			
+		</script>
+		<style type="text/css">
+			body  {background-color: blue; border:0px; margin:0px; padding: 0px;}
+			header {background-color: green; margin: 20px; margin-bottom: 0px;}
+			h4 {margin: 0px;display: inline-block; padding-right: 50px;}
+			/* .pitchingStatContainer div:before {content: "STAT";} */
+			.pitchingStatContainer {font-family: franklin gothic medium, Verdana, Geneva, sans-serif;}
+			.pitchingStatContainer div {min-width: 40px; background-color: #fff; border: solid; display: inline-block; padding: 0px 6px 0px 6px; margin:0px; margin-bottom: 4px; margin-right: -4px;}
+			.pitchingStatContainer div.label {display:block; color:red;border: solid red; border-width: 2px 0px 0px 0px; padding: 0px; margin: 2px 0px 0px 0px; font-size: .6em;}
+			.pitchingStatContainer  {margin:20px; margin-top: 0px; border:solid; border-color: green; padding: 20px;}
+			
+			.pitchingBatted div  {display: inline-block; min-width: 45px;}
+			div.pitchingBatted  {display: block; }
+			
+			div.pitchingDetail  {display: block; margin: 0px;}
+			.pitchingDetail div  {display: inline-block;padding: 0px; margin: 0px; border: none;}
+		
+			.pitchingStatContainer h4  {min-width: 100%}
+			div.ballPercent  {background-color: orange; width: 100px;}
+			.ballSpeed  {width: 66px;}
+			div.cutter  {width: 35px; background-color: red}
+			div.twoseam  {width: 55px; background-color: red-orange;}
+			div.fourseam  {width: 100px; background-color: lime}
+			span.mph  {font-size: .5em;}
+			.pitchType  {width: 200px;}
+			.pitchingBatted  {}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h2>2012</h2>
+			<h4>Pitching Stats</h4><h4>Level: MLB</h4>
+		</header>
+		<div class="pitchingStatContainer">
+			<div class="inningsPitched">
+				103.2
+				<div class="label">IP</div>
+			</div>
+			<div class="earnedRunAvg">
+				3.91
+				<div class="label">ERA</div>
+			</div>
+			<div class="hitsAllowed">
+				90
+				<div class="label">H</div>
+			</div>
+			<div class="runsAllowed">
+				48
+				<div class="label">R</div>
+			</div>
+			<div class="strikeOuts">
+				96
+				<div class="label">SO</div>
+			</div>
+			<div class="walksAllowed">
+				32
+				<div class="label">BB</div>
+			</div>
+			<div class="whip">
+				1.18
+				<div class="label">WHIP</div>
+			</div>
+			<div class="gameStart">
+				18
+				<div class="label">GS</div>
+			</div>
+			<div class="wins">
+				5
+				<div class="label">W</div>
+			</div>
+			<div class="losses">
+				7
+				<div class="label">L</div>
+			</div>
+			<div class="saves">
+				0
+				<div class="label">SV</div>
+			</div>
+			<div class="holds">
+				0
+				<div class="label">HLD</div>
+			</div>
+			<div class="gamesFinished">
+				0
+				<div class="label">GF</div>
+			</div>
+			<div class="shutouts">
+				0
+				<div class="label">ShO</div>
+			</div>
+			<div class="totalStrikes">
+				1105
+				<div class="label">Strikes</div>
+			</div>
+			<div class="totalPitches">
+				1699
+				<div class="label">Pitches</div>
+			</div>
+			<div class="pitchingBatted">
+				<h4>Pitching Batted</h4>
+				<div class="lineDrive">
+					19.5%
+					<div class="label">LD/BIP</div>
+				</div>
+				<div class="flyBall">
+					33.2%
+					<div class="label">FB/BIP</div>
+				</div>
+				<div class="groundBall">
+					47.3%
+					<div class="label">GB/BIP</div>
+				</div>
+				<div class="infieldFlyball">
+					8.7%
+					<div class="label">IFFB</div>
+				</div>
+				<div class="infieldHit">
+					7.6%
+					<div class="label">IFH</div>
+				</div>
+				<div class="groundBallFlyBall">
+					1.42
+					<div class="label">GB/FB</div>
+				</div>
+			</div>
+			<div class="pitchingDetail">
+				<h4>Pitch Breakdown</h4>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						100.8 <span class="mph">mph</span>
+						<div class="label">4s Fastball</div>
+					</div>
+					<div class="ballPercent fourseam">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.2 <span class="mph">mph</span>
+						<div class="label">2s Fastball</div>
+					</div>
+					<div class="ballPercent twoseam">18.7%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5<span class="mph">mph</span>
+						<div class="label">Cutter</div>
+					</div>
+					<div class="ballPercent cutter">0%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Splitter</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Forkball</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Sinker</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Slider</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Cureveball</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Knuckle Curve</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Eephus</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Changeup</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Screwball</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+				<div class="pitchType">
+					<div class="ballSpeed">
+						93.5 <span class="mph">mph</span>
+						<div class="label">Knuckleball</div>
+					</div>
+					<div class="ballPercent">59.3%</div>
+				</div>
+			</div>
+			<div class="#">
+				<h4>Video Highlights</h4>
+			</div>
+		</div>
+	</body>

@@ -1,0 +1,85 @@
+			* {margin: 0; padding: 0;}
+			body {background-color: #0E3386;}
+
+			/* -- Header Styles -- */
+			header {position: relative; z-index: 225; margin-top: 14px; height: 63px; background-color: #D82427; border: solid; border-width: 3px 0px 3px 0px; border-color: #800517; box-shadow: 0px 10px 5px rgba(0,0,0,0.5);  font-family: franklin gothic medium, Verdana, Geneva, sans-serif;}
+			#numGetBtn  {display: none;}
+			#cubsSpringRoster  {line-height: .9em; float: left; margin: 14px 0px 0px 114px; color: #FFF; font-weight: 800;}
+			#logo {position: absolute; z-index: 300; left: 6px; top: 6px; min-width: 84px; border: none; min-height: 116px; background-image:url('../images/frontsPiece.png'); background-size:116px 116px; background-repeat:no-repeat;}
+			#logoReflect {position: absolute; z-index: 100; left: 6px; top: 6px; min-width: 84px; border: none; min-height: 116px; background-image:url('../images/cubsbear.png'); background-size:116px 116px; background-repeat:no-repeat;}
+			#upperStripe {margin-top: 10px; width: auto; height: 30px; background-color: #0E3386; background-image:url('../images/headerHexMid.png'); border: solid; border-width: 1px 0px 1px 0px; border-color: blue; box-shadow: 0px 2px 1px #76000D;}
+			#lowerStripe {margin-top: 5px; width: auto; height: 8px; background-color: #0E3386; background-image:url('../images/headerHexMid.png'); border: solid; border-width: 1px 0px 1px 0px; border-color: blue; box-shadow: 0px 2px 1px #76000D;}
+			#numberSearch {float: right; width: 90px; position: relative; top: -40px;}
+			#numberGet  {width: 55px; padding: 5px; font-size: 16px; box-shadow: 0px 0px 6px 3px #081e50; border-radius: 4px;}
+			
+			/* --  Menu Styles -- */
+			menu  {margin: 0 auto; width: 60%;font-family: franklin gothic medium, Verdana, Geneva, sans-serif;}
+			#outerMenu  {position: relative; z-index: 150; display: none; width: 100%;box-shadow: 10px 10px 5px rgba(0,0,0,0.5);}
+			#borderMenu  {border: none; background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255,1)), to(rgba(128, 5, 23, 1))); }
+			#borderMenu	{background-image: linear-gradient(to bottom, rgba(0, 0, 255,1), rgba(128, 5, 23, 1));}
+			#innerMenu  {box-shadow: inset 3px -3px 6px 0px rgba(0,0,0,.6), inset -3px 0px 6px 0px rgba(0,0,0,.6); background: -webkit-gradient(linear, left top, left bottom, from(rgba(14, 51, 134, 1)), to(rgba(216, 36, 39, 1))); margin: 0px 3px 0px 3px; border-radius: 0px 0px 10px 10px;}
+			#menuController  {top: -1px; color: silver; text-align:center; font-family: franklin gothic medium, Verdana, Geneva, sans-serif; position: relative; z-index:250;background-image:url('../images/menuPull.png'); background-color: #800517; border-radius: 0px 0px 10px 10px; box-shadow: 10px 10px 5px rgba(0,0,0,0.5); padding: 10px 0px 10px 0px;}
+			
+			#innerMenu ul  {margin: 0px 10px 0px 10px; padding: 6px 0px 12px 0px; color: #fff;}
+			#innerMenu ul  li {margin-top: 10px; list-style-type: none; list-style: none; padding:1px; overflow: hidden; background-color: #E5E3E4; font-size: 1.5em; text-indent: 20px; font-weight: 600; background: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.3)), to(rgba(0,0,0,0.0))); border-radius: 7px; box-shadow: inset 3px 3px 5px rgba(250,250,250,0.6), 3px 3px 6px rgba(0,0,0,0.1), -2px -2px 5px rgba(0,0,0,0.2);}
+			ul #pitcherSub  {padding-top: 10px; display: none;}
+			ul #pitcherSub li  {display: inline-block; text-indent: 0px; margin: 4px; padding: 4px; width: 28px; font-size: 1em; text-align: center;}
+			ul #fielderSub  {padding-top: 10px; display: none;}
+			ul #fielderSub li  {display: inline-block; text-indent: 0px; margin: 4px; padding: 4px; width: 28px; font-size: 1em; text-align: center;}
+			
+			
+			/* -- Container Styles -- */
+			#playerList  {width: 100%; font-size: normal; font-family: Verdana, Geneva, sans-serif; position: absolute; z-index: 10; top: 150px; padding-bottom: 160px;}
+
+			/* -- Player Styles --  */
+			.singleA div.playerInfo {background-color: #becf83;}
+			.doubleA div.playerInfo  {background-color: #cf8383;}
+			.tripleA div.playerInfo  {background-color: #83aecf;}
+			.mlb  div.playerInfo  {background-color: white;}
+			.jpn div.playerInfo  {background-color: #fbbc48;}
+
+			.singleA div.playerExpanded {border: 3px solid #becf83; border-top: 0px;}
+			.doubleA div.playerExpanded  {border: 3px solid #cf8383; border-top: 0px;}
+			.tripleA div.playerExpanded  {border: 3px solid #83aecf; border-top: 0px;}
+			.mlb  div.playerExpanded  {border: 3px solid white; border-top: 0px;}
+			.jpn div.playerExpanded  {border: 3px solid #fbbc48; border-top: 0px;}
+			
+			.playerContainer  {margin: 0px 12px 10px 12px; }
+			.playerInfo  {text-align: justify; padding: 10px; border-radius: 10px 10px 10px 10px; box-shadow: 10px 10px 5px #081e50; color: #0E3386; font-weight: 600;}
+			
+			.playerInfo div {-ms-text-justify: distribute-all-lines; display: inline-block;}
+			.playerExpanded  {color: #fff; background-image:url('../images/headerHexMid.png'); background-color: rgba(0,0,0,.5); padding: 10px 10px 14px 10px; margin: 0px 8px 0px 8px; border-radius: 0px 0px 10px 10px; box-shadow: 10px 10px 5px #081e50, inset 0px 0px 50px 5px rgba(0,0,0,.5); display: none;}
+			.playerLinks li {list-style-type: none; list-style: none; display: inline-block;}
+			.playerLinks a {text-decoration: none;  padding: 0px; border-top: 2px solid #CCCCCC; border-right: 2px solid #333333; border-bottom: 2px solid #333333; border-left: 2px solid #CCCCCC; border-radius: 6px; box-shadow: 6px 6px 5px rgba(0,0,0,0.5);}
+			.playerInfo:after {content: ''; width: 100%; display: inline-block; font-size: 0; line-height: 0;}
+
+			li.baseballReference a {margin: 5px 7px 0px 7px; display: block; background-image:url('../images/baseballreference.png'); min-width: 60px; min-height: 60px; background-size:60px 60px; background-repeat:no-repeat;}
+			li.rotoworld a {margin: 5px 0px 0px 7px; display: block; background-image:url('../images/rotoworld.png'); min-width: 60px; min-height: 60px; background-size:72px 72px; background-repeat:no-repeat; background-position: -4px -4px;}
+			li.wikipedia a {margin: 5px 7px 0px 10px; display: block; background-image:url('../images/wikipedia.png'); min-width: 60px; min-height: 60px; background-size:60px 60px; background-repeat:no-repeat; background-position: 2px 4px;}
+			
+			.pitchingCareer:before  {content: "Career: "; color: #0AFF0A;}
+			.pitching2012:before  {content: "2012: "; color: #0AFF0A;}
+			.battingCareer:before  {content: "Career: "; color: #0AFF0A;}
+			.batting2012:before  {content: "2012: "; color: #0AFF0A;}
+			.playerHighlights:before  {content: "Notes: "; color: #0AFF0A;}
+			.playerExpanded hr   {margin: 6px; height: 3px; border: 0px; background-image: -webkit-linear-gradient(left, rgba(250, 235, 215,0), rgba(250, 235, 215,0.75), rgba(250, 235, 215,0));  }
+			.playerBio:before  {content: "Bio: "; color: #0AFF0A;}
+			/*  --  Footer Styles  --  */
+			footer  {position: fixed; bottom: 0px; z-index: 1000; width: 100%; display: inline-block; font-family: franklin gothic medium, Verdana, Geneva, sans-serif;}
+			#filterName  {font-size: 1.2em; text-align: center; padding: 8px; color: rgb(212, 160, 23); background-image:url('../images/menuPull.png'); background-color: #800517;}
+			/* need to set guides to -1 bottom for samsung 1 px gap collapse */
+			#colorGuide  {display: none; position: relative; bottom: -1px;text-align: center; padding: 10px; background-color: rgba(212, 160, 23, 0.3); border-radius: 12px 12px 0px 0px; border: solid 3px #800517; box-shadow: inset 3px 3px 5px rgba(128, 5, 23, 0.5), inset -3px 0px 5px rgba(128, 5, 23, 0.5);}
+			#colorGuide div {color: #0E3386; margin: 0px 5px 0px 5px; text-align: justify; display: inline-block; padding: 6px 10px 6px 10px; border-radius: 6px; box-shadow: inset 4px 4px 8px rgba(250,250,250,0.6), 4px 4px 6px rgba(0,0,0,0.3), -2px -2px 4px rgba(0,0,0,0.2);}
+			#colorGuide div.singleA {background-color: #becf83;}
+			#colorGuide div.doubleA {background-color: #cf8383;}
+			#colorGuide div.tripleA {background-color: #83aecf;}
+			#colorGuide div.mlb {background-color: white;}
+			#colorGuide div.jpn {background-color: #fbbc48;}
+			
+			#playerGuide {display: none; position: relative; bottom:-1px;}
+			
+			/* Added Styles For Cubs Developer Demo */
+			form[name="notes"] {width: auto;}
+			.newNote	{min-width: 100%; height: 100px;}
+			.existingNotes	{max-width: auto;}
+			#innerMenu	{padding: 10px; color: white;}
